@@ -1,0 +1,10 @@
+repositories:
+  # Official codefresh helm chart
+  - name: "gitops-external-cluster"
+    url: "git+https://github.com/codefresh-io/csdp-official@add-cluster/helm"
+
+releases:
+  - name: gitops-external-cluster
+    namespace: gitops-runtime
+    chart: "gitops-external-cluster/csdp-add-cluster"
+    version: "0.4.0"
